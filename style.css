@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 *, *:before, *:after {
@@ -31,22 +32,36 @@ img {
     margin-top: 2em;
 }
 
-.center-content .link {
-    margin-top: 2em;
+.logo img {
+  width: 260px;
 }
 
-.logo {
-  width: 300px;
+@media (max-width: 380px) {
+  .logo img {
+    width: 180px;
+  }
 }
 
-.link a:hover {
+.copy {
+  text-align: justify;
+  max-width: 400px;
+  min-width: 200px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.copy a:hover {
   color: black;
 }
 
-.link a:visited {
+.copy a:visited {
   color: blue;
 }
 
-.link a {
+.copy a {
   color: blue;
+}
+
+.copy p {
+  margin-top: 2em;
 }
